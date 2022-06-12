@@ -1,0 +1,22 @@
+<div class="container">
+  <table>
+    <thead>
+      <tr>
+        <th>NO.</th>
+        <th>Fullname</th>
+        <th>Email</th>
+        <th>Phone number</th>
+      </tr>
+    </thead>
+    {{#each contactsList}}
+      <tr>
+        <td>#</td>
+        <td>{{this.fullname}}</td>
+        <td>{{this.email}}</td>
+        <td>{{this.phoneNumber}}</td>
+      </tr>
+    {{/each}}
+    <tbody class="contacts-list-body"></tbody>
+
+  </table>
+</div>
